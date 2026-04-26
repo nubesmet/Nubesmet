@@ -24,7 +24,7 @@ body{
 
 img{
 	<max-width: 100%;
-	height: auto;
+	height:auto;
 }
 
 .container {
@@ -70,7 +70,7 @@ img{
 	color: #FF8400;
 }
 
-#MENU {
+.menu {
 	display: none;
 }
 
