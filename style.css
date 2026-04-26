@@ -54,7 +54,7 @@ img{
 
 
 .menu .navbar ul {
-	display: flex;
+	display: none;
 }
 
 .menu .navbar ul li a {
