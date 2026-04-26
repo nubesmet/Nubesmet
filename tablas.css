@@ -1,0 +1,29 @@
+table {
+	width: 600px;
+	margin: auto;
+}
+th {
+	background: #d94a38;
+	color: #fff;
+	padding: 10px 20px;
+}
+td {
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	padding: 10px 20px 0;
+}
+tbody tr:nth-child(even) {
+	background: #eee;
+}
+tfoot td {
+	background: #666;
+	color: #fff;
+	padding-bottom: 10px;
+	border-radius: 0 0 10px 10px;
+}
+caption {
+	background: #666;
+	color: #fff;
+	padding-bottom: 10px;
+	border-radius:10px 10px 0 0;
+}
