@@ -44,6 +44,7 @@ img{
 }
 
 
+
 .logo {
 	color: #FF8400;
 	font-size: 25px;
@@ -68,12 +69,13 @@ img{
 	color: #FF8400;
 }
 
-#MENU {
+#menu {
 	display: none;
 }
 
 .menu-icono {
-	width: 25px;
+	width: 30px;
+	cursor: pointer;
 }
 
 .menu label {
