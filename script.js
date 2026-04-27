@@ -1,4 +1,4 @@
-const apiKey = "TU_API_KEY";
+const apiKey = "bf6c69e49c2efb4c32accefb1d045379";
 const city = "Pachuca";
 
 async function getWeather() {
