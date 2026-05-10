@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clima iPhone</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <main class="app">
+
+        <!-- Parte superior -->
+
+        <section class="top">
+
+            <p class="location-label">MI UBICACIÓN</p>
+
+            <h2 id="city">Cargando...</h2>
+
+            <h1 id="temp">--°</h1>
+
+            <p id="weather">Nublado</p>
+
+            <p class="maxmin">
+                Máxima: <span id="max">--°</span>
+                Mínima: <span id="min">--°</span>
+            </p>
+
+        </section>
+
+        <!-- Pronóstico horas -->
+
+        <section class="card">
+
+            <p id="description">
+                Actualizando pronóstico...
+            </p>
+
+            <div class="hourly" id="hourly">
+
+            </div>
+
+        </section>
+
+        <!-- Pronóstico días -->
+
+        <section class="card">
+
+            <div class="title">
+                PRONÓSTICO PARA 7 DÍAS
+            </div>
+
+            <div id="daily"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>

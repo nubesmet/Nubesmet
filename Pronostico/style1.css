@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+
+    color:white;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    background:#000;
+
+}
+
+.background{
+
+    position:fixed;
+    inset:0;
+
+    transition:1s ease;
+
+    transform:scale(1.1);
+
+}
+
+/* SOLEADO */
+
+.sunny{
+
+    background:
+    linear-gradient(rgba(255,180,50,.25), rgba(0,0,0,.3)),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")
+    center/cover no-repeat;
+
+    animation:zoom 15s infinite alternate;
+
+}
+
+/* NUBLADO */
+
+.cloudy{
+
+    background:
+    linear-gradient(rgba(80,80,80,.35), rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1534088568595-a066f410bcda")
+    center/cover no-repeat;
+
+    animation:moveClouds 20s infinite alternate;
+
+}
+
+/* LLUVIA */
+
+.rainy{
+
+    background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1515694346937-94d85e41e6f0")
+    center/cover no-repeat;
+
+    animation:rainMove 10s infinite alternate;
+
+}
+
+@keyframes zoom{
+
+    from{
+        transform:scale(1.1);
+    }
+
+    to{
+        transform:scale(1.2);
+    }
+}
+
+@keyframes moveClouds{
+
+    from{
+        background-position:center;
+    }
+
+    to{
+        background-position:top;
+    }
+}
+
+@keyframes rainMove{
+
+    from{
+        background-position:center;
+    }
+
+    to{
+        background-position:bottom;
+    }
+}
+
+.app{
+
+    position:relative;
+
+    z-index:2;
+
+    padding:25px;
+
+}
+
+.top{
+
+    text-align:center;
+
+    margin-top:50px;
+
+}
+
+.location-label{
+
+    font-size:18px;
+
+    opacity:.9;
+
+}
+
+.top h2{
+
+    font-size:50px;
+
+}
+
+.top h1{
+
+    font-size:140px;
+
+    font-weight:200;
+
+    line-height:1;
+
+}
+
+#weather{
+
+    font-size:30px;
+
+}
+
+.maxmin{
+
+    font-size:22px;
+
+    margin-top:5px;
+
+}
+
+.card{
+
+    margin-top:25px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:28px;
+
+    padding:20px;
+
+}
+
+.hourly{
+
+    display:flex;
+
+    gap:20px;
+
+    overflow-x:auto;
+
+    margin-top:20px;
+
+}
+
+.hour{
+
+    min-width:60px;
+
+    text-align:center;
+
+}
+
+.hour-icon{
+
+    font-size:28px;
+
+    margin:10px 0;
+
+}
+
+.day{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:14px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.day:last-child{
+
+    border:none;
+}
