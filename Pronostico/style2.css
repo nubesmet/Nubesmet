@@ -22,6 +22,43 @@ body{
     overflow-x:hidden;
 
 }
+.topbar{
+
+    width:100%;
+
+    background:#6A0D2E;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:12px 40px;
+
+}
+
+.logo-side{
+
+    width:70px;
+
+    height:auto;
+
+}
+
+.topbar-title{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    flex:1;
+
+}
 
 img{
 
