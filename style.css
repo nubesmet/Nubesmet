@@ -91,7 +91,7 @@ img{
 
 
 .logo {
-	color: #FF8400;
+	color: #170fb4;
 	font-size: 25px;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -111,7 +111,7 @@ img{
 }
 
 .menu .navbar ul li a:hover {
-	color: #FF8400;
+	color: #170fb4;
 }
 
 #MENU {
@@ -156,14 +156,14 @@ p {
 	display: inline-block;
 	padding: 10px 25px;
 	color: #FFFFFF;
-	background-color: #FF8400;
+	background-color: #170fb4;
 	text-transform: uppercase;
 	border-radius: 25px;
 	font-size: 16px;
 }
 
 .btn-1:hover {
-	background-color: #F38004;
+	background-color: #170fb4;
 }
 
 .header-img {
