@@ -21,6 +21,50 @@ body{
 	  font-family: "Poppins", sans-serif;
 	  font-family: "Poppins", sans-serif;
 }
+.topbar{
+
+    width:100%;
+
+    background:#6d002f;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.topbar-logo{
+
+    width:90px;
+
+    height:auto;
+
+}
+
+.topbar-title{
+
+    flex:1;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+}
+
 
 img{
 	<max-width: 100%;
