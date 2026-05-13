@@ -1,196 +1,127 @@
+# index.html
+
+```html
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 
-    <meta charset="utf-8">
-
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Boyas Marinas</title>
 
     <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="tablas.css">
 
 </head>
-
 <body>
 
-    <!-- HEADER -->
+    <!-- TOPBAR -->
 
-    <header class="header">
+    <header class="topbar">
 
-        <div class="container">
+        <img src="imagen/ipn.png" class="topbar-logo">
 
-            <!-- MENU -->
+        <h1 class="topbar-title">
+            ESCUELA SUPERIOR DE
+            INGENIERÍA Y ARQUITECTURA
+            UNIDAD TICOMÁN
+        </h1>
 
-            <div class="menu">
+        <img src="imagen/esia.png" class="topbar-logo">
 
-                <a href="#" class="logo">
-                    NUBESMET
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content container">
+
+            <div class="hero-text">
+
+                <span class="tag">NUBESMET</span>
+
+                <h2>Boyas Marinas</h2>
+
+                <p>
+                    Las boyas marinas son dispositivos flotantes
+                    utilizados para señalización, monitoreo y
+                    seguridad en zonas marítimas.
+                </p>
+
+                <a href="#contenido" class="btn-1">
+                    Explorar
                 </a>
-
-                <input type="checkbox" id="menu">
-
-                <label for="menu">
-
-                    <img
-                    class="menu-icono"
-                    src="imagen/menu.webp"
-                    alt="menu">
-
-                </label>
-
-                <nav class="navbar">
-
-                    <ul>
-
-                        <li>
-                            <a class="btn-1"
-                            href="index.html">
-                                Inicio
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="btn-1"
-                            href="index.html">
-                                Clima
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="btn-1"
-                            href="https://smn.conagua.gob.mx/es/">
-                                Estaciones
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="btn-1"
-                            href="#">
-                                Contacto
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </nav>
 
             </div>
 
-            <!-- HERO -->
-
-            <div class="header-content">
-
-                <div class="header-txt">
-
-                    <h1>Boyas Marinas</h1>
-
-                    <p>
-                        Las boyas marinas son dispositivos flotantes
-                        utilizados principalmente para la señalización
-                        y monitoreo en el mar.
-                    </p>
-
-                </div>
-
-                <div class="header-img">
-
-                    <img
-                    src="imagen/7.jpg"
-                    alt="Boyas marinas">
-
-                </div>
-
+            <div class="hero-image">
+                <img src="imagen/7.jpg">
             </div>
 
         </div>
 
-    </header>
+    </section>
 
     <!-- CONTENIDO -->
 
-    <main class="Products container">
+    <main class="container" id="contenido">
 
-        <h2>Contenido</h2>
+        <div class="section-title">
+            <h3>Tipos de Boyas</h3>
+            <p>Principales sistemas utilizados en oceanografía y navegación.</p>
+        </div>
 
-        <div class="Products-Content">
+        <div class="cards">
 
-            <div class="Products-1">
-
+            <div class="card">
                 <img src="imagen/7.jpg">
-
                 <h4>Boyas Salvavidas</h4>
-
                 <p>
-                    Son boyas que van unidas a las embarcaciones
-                    y tienen como finalidad ser lanzadas al mar.
+                    Utilizadas para rescate y apoyo en situaciones de emergencia marítima.
                 </p>
-
             </div>
 
-            <div class="Products-1">
-
+            <div class="card">
                 <img src="imagen/8.jpg">
-
                 <h4>Boyas Dart</h4>
-
                 <p>
-                    Son boyas específicas para tsunamis y maremotos.
+                    Detectan variaciones del nivel del mar relacionadas con tsunamis.
                 </p>
-
             </div>
 
-            <div class="Products-1">
-
+            <div class="card">
                 <img src="imagen/10.webp">
-
                 <h4>Boyas de Señalización</h4>
-
                 <p>
-                    Limitan zonas de navegación y separan
-                    embarcaciones de bañistas.
+                    Delimitan zonas seguras para navegación y actividades recreativas.
                 </p>
-
             </div>
 
-            <div class="Products-1">
-
+            <div class="card">
                 <img src="imagen/11.jpg">
-
                 <h4>Boyas de Fondeo</h4>
-
                 <p>
-                    Funcionan como guía y señalización marítima.
+                    Funcionan como puntos de referencia y guía marítima.
                 </p>
-
             </div>
 
-            <div class="Products-1">
-
+            <div class="card">
                 <img src="imagen/12.jpg">
-
                 <h4>Boyas de Amarre</h4>
-
                 <p>
-                    Se utilizan para amarrar embarcaciones
-                    fuera del pantalán.
+                    Diseñadas para asegurar embarcaciones en zonas marítimas.
                 </p>
-
             </div>
 
-            <div class="Products-1">
-
+            <div class="card">
                 <img src="imagen/13.jpg">
-
                 <h4>Boyas para Submarinistas</h4>
-
                 <p>
-                    Señalan la posición de nadadores y submarinistas.
+                    Ayudan a identificar la ubicación de nadadores y buzos.
                 </p>
-
             </div>
 
         </div>
@@ -199,3 +130,367 @@
 
 </body>
 </html>
+```
+
+---
+
+# style2.css
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins', sans-serif;
+
+    background:#0f1724;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* TOPBAR */
+
+.topbar{
+
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:15px 30px;
+
+    background:rgba(10,10,20,.75);
+
+    backdrop-filter:blur(15px);
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+}
+
+.topbar-logo{
+
+    width:70px;
+
+}
+
+.topbar-title{
+
+    flex:1;
+
+    text-align:center;
+
+    font-size:26px;
+
+    font-weight:700;
+
+    line-height:1.3;
+
+}
+
+/* HERO */
+
+.hero{
+
+    position:relative;
+
+    min-height:90vh;
+
+    background:
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')
+    center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.6));
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:50px;
+
+}
+
+.hero-text{
+    flex:1;
+}
+
+.tag{
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    display:inline-block;
+
+    margin-bottom:25px;
+
+}
+
+.hero-text h2{
+
+    font-size:72px;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    font-size:20px;
+
+    line-height:1.7;
+
+    color:#d6d6d6;
+
+    margin-bottom:30px;
+
+}
+
+.btn-1{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    background:#007AFF;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-1:hover{
+
+    transform:translateY(-4px);
+
+    background:#005fd1;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+}
+
+.hero-image img{
+
+    border-radius:35px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.4);
+
+}
+
+/* SECTION */
+
+.section-title{
+
+    text-align:center;
+
+    margin:100px 0 50px;
+
+}
+
+.section-title h3{
+
+    font-size:50px;
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    color:#b8b8b8;
+
+}
+
+/* CARDS */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:80px;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.3);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.card h4{
+
+    font-size:24px;
+
+    padding:20px 20px 10px;
+
+}
+
+.card p{
+
+    padding:0 20px 25px;
+
+    line-height:1.6;
+
+    color:#d2d2d2;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .topbar{
+
+        flex-direction:column;
+
+        gap:10px;
+
+        text-align:center;
+
+    }
+
+    .topbar-logo{
+
+        width:55px;
+
+    }
+
+    .topbar-title{
+
+        font-size:20px;
+
+    }
+
+    .hero{
+
+        padding:80px 0;
+
+    }
+
+    .hero-content{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .hero-text h2{
+
+        font-size:48px;
+
+    }
+
+    .hero-text p{
+
+        font-size:18px;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-title h3{
+
+        font-size:36px;
+
+    }
+
+}
+```
